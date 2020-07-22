@@ -1,0 +1,209 @@
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+
+/* COLORS
+Main :  
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+  font-family: "Lato";
+  font-weight: 400;
+  line-height: 1.2;
+  color: rgba(119, 119, 119, 0.24);
+  padding: 3rem;
+  box-sizing: border-box;
+}
+
+.header {
+  height: 90vh;
+  width: 100%;
+  background-image: linear-gradient(to top left,rgba(3, 245, 164, 0.7), rgba(22, 180, 207, 0.7)), url(bg_login.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 72% );
+  animation-name: moveInLogin;
+  animation-duration: 1s;
+}
+
+@keyframes moveInLogin {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.heading {
+  top: 5rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+  display: block;
+  position: absolute;
+  
+}
+
+.heading-main {
+  padding: 2rem;
+  font-size: 3.5rem;
+  font-weight: 400;
+  letter-spacing: .3rem;
+  animation-name: moveInHeader;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes moveInHeader {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  40% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(0);
+  }  
+}
+
+.heading-line {
+  display: block;
+  animation-name: moveInLine;
+  animation-duration: 2.0s;
+  animation-timing-function: ease-in;
+}
+
+@keyframes moveInLine {
+  0% {
+    opacity: 0;
+  }
+
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.textbox {
+  position: absolute;
+  top: 20rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  animation-name: moveInText;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes moveInText {
+  0% {
+    opacity: 0;
+  }
+
+  65% {
+    opacity: 0;
+    transform: translate(-50%, 0%);
+  }
+
+  100% {
+    opacity: 1;
+    ttransform: translate(-50%, -50%);
+  }
+}
+
+.details {
+  display: block;
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin: 5px;
+}
+
+.input-field {
+  display: block;
+  font-size: 1.8rem;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.input-field:focus {
+  border: 1px solid black;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  height: 30px;
+  margin: 15px auto;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  color: #ffffff;
+  background-color: rgba(22, 180, 207, 0.7);
+  box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, .2);
+  border: none;
+  outline: none;
+  border-radius: 7px;
+  animation-name: moveInBtn;
+  animation-duration: 4s;
+}
+
+@keyframes moveInBtn {
+  0% {
+    opacity: 0;
+  }
+
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.btn:hover {
+  cursor: pointer;
+  transform: translateY(-3px);
+  box-shadow: 0 1.5rem 2.5rem rgba(0, 0, 0, .2);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+}
+
+.register {
+  text-decoration: none;
+  padding: 3.5rem;
+  animation-name: moveInBtn;
+  animation-duration: 4s;
+}

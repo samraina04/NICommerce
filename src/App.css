@@ -1,0 +1,15 @@
+html {
+  font-size: 62.5%;
+}
+
+.nav-item {
+text-decoration: none;
+font-size: 2rem;
+top: 10%;
+color: rgba(12, 196, 180, 0.795);
+float: right;
+}
+
+.nav-item :hover {
+cursor: pointer;
+}
